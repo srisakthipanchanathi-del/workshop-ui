@@ -1,0 +1,17 @@
+/* resetting default browser styles */
+*{
+  margin: 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', sans-serif;
+  background-color:#f4f6f8;
+  color: #222;
+}
+
+/* make sure the page is tall enough so footer stays at bottom */
+.maincontent{
+  min-height: calc(100vh-130px);
+}

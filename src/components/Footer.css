@@ -1,0 +1,13 @@
+.footer{
+    background: #1a1a1a;
+    color: #999;
+    text-align: center;
+    padding: 22px 0;
+    font-size: 0.82rem;
+}
+
+.footer-note{
+    margin-top: 5px;
+    opacity: 0.5;
+    font-size: 0.78rem;
+}
