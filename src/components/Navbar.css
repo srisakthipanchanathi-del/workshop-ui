@@ -1,0 +1,84 @@
+.navbar{
+    background-color: #2e7d32;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* stays on top while scrolling*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* nav links shown as row on desktop */
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+/* register looks like button*/
+.register-link{
+    background-color: white;
+    color: #2e7d32 !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* hide hamburger on big screens */
+.hamburger-btn{
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+/* mobile styles */
+@media (max-width: 768px){
+    /* show hamburger icon*/
+    .hamburger-btn{
+        display: block;
+    }
+    /* hide nav links by default */
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position :absolute;
+        top: 60px;
+        left:0;
+        right:0;
+        background-color: #2e7d32;
+        padding: 16px 20px;
+        gap:  14px;
+    }
+    /* show links when menu is open*/
+    .nav-links.open{
+        display: flex;
+    }
+}
+/* force hide hamburger on desktop - override fix */
+@media (min-width: 769px) {
+  .hamburger-btn {
+    display: none !important;
+  }
+}
+
+
+
