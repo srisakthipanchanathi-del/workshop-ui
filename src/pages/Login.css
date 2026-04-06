@@ -1,0 +1,92 @@
+/* center the card on the page */
+.auth-wrapper {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+  padding: 36px 28px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 390px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.auth-tagline {
+  color: #777;
+  font-size: 0.88rem;
+  margin-bottom: 22px;
+}
+
+.auth-card label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 0.92rem;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+/* green border when user clicks the input */
+.auth-card input:focus {
+  border-color: #2e7d32;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2e7d32;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.submit-btn:hover {
+  background: #1b5e20;
+}
+
+.switch-link {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.88rem;
+  color: #666;
+}
+
+.switch-link a {
+  color: #2e7d32;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* red box for errors */
+.error-box {
+  background: #fff0f0;
+  color: #c62828;
+  border-left: 3px solid #c62828;
+  padding: 9px 12px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  font-size: 0.88rem;
+}
