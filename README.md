@@ -86,13 +86,21 @@ The original site was built with Django HTML templates -
 basic styling, not mobile friendly, no component structure.
 Original repo: https://github.com/FOSSEE/workshop_booking
 
+### Before - Home Page
+![before](screenshots/before.png)
+
+### Before - Login Page
+![before2](screenshots/before2.png)
+
+
+
 ### After - My React Redesign
 
 ### Desktop - Home Page
 ![desktop home](screenshots/desktop-home.png)
 
 ### Desktop - Login Page
-![desktop login](screenshots/desktop-login.png)
+![desktop home2](screenshots/desktop-home2.png)
 
 ### Desktop - Register Page
 ![desktop register](screenshots/desktop-register.png)
@@ -101,10 +109,11 @@ Original repo: https://github.com/FOSSEE/workshop_booking
 ![mobile home](screenshots/mobile-home.png)
 
 ### Mobile - Home Page (Alt View)
-![mobile home 2](screenshots/mobile-home2.png)
+![mobile login](screenshots/mobile-login.png)
 
 ### Mobile - Register Page
 ![mobile register](screenshots/mobile-register.png)
+
 
 ## What I Learned
 
