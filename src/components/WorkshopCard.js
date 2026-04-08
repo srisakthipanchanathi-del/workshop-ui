@@ -23,7 +23,12 @@ function WorkshopCard({ title,description,instructor,date,status}){
       {instructor && <p className="w-meta">👤 {instructor}</p>}
       {date && <p className="w-meta">📅 {date}</p>}
 
-      <button className="w-btn">Book Now</button>
+      <button 
+        className="primary-btn w-btn"
+        disabled={status === "Full"}
+      >
+      {status === "Full" ? "Full" : "Book Now"}
+      </button>
     </div>
   );
 }

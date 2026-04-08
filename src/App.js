@@ -1,34 +1,40 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// Importing components 
 
+// components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-//Importing pages i made
+// pages
 import Home from "./pages/Home";
-import Login from  "./pages/Login";
+import Login from "./pages/Login";
 import Register from "./pages/Register";
 
 import "./App.css";
 
 function App() {
-  // BrowserRouter lets us move between pages without reloading
-  return (
-    <BrowserRouter>
-      <Navbar />
+return ( <BrowserRouter>
 
-      {/* this is where the page content changes based on URL */}
-      <div className="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
-      </div>
+```
+  {/* top navigation */}
+  <Navbar />
 
-      <Footer />
-    </BrowserRouter>
-  );
+  {/* main content area */}
+  <main className="maincontent">
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
+  </main>
+
+  {/* footer */}
+  <Footer />
+
+</BrowserRouter>
+
+
+);
 }
 
 export default App;
+

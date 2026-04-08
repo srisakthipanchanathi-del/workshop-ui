@@ -1,13 +1,34 @@
-.footer{
-    background: #1a1a1a;
-    color: #999;
-    text-align: center;
-    padding: 22px 0;
-    font-size: 0.82rem;
+/* Footer container */
+.footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  margin-top: 40px;
+
+  /* smooth visual feel */
+  transition: all 0.3s ease;
 }
 
-.footer-note{
-    margin-top: 5px;
-    opacity: 0.5;
-    font-size: 0.78rem;
+/* keep text aligned nicely */
+.footer p {
+  margin: 0;
+}
+
+/* main footer text */
+.footer-main {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+/* secondary note */
+.footer-note {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+/* subtle hover polish */
+.footer:hover {
+  background-color: #256a2a;
 }
