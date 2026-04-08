@@ -1,97 +1,124 @@
 // Register page - sign up form with role selection
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Login.css"; // same styles work fine here
+import "./Login.css"; // reusing auth styles
 
 function Register() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [role, setRole] = useState("coordinator");
-  const [errorMsg, setErrorMsg] = useState("");
+// form state
+const [name, setName] = useState("");
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+const [role, setRole] = useState("coordinator");
 
-  function handleRegister(e) {
-    e.preventDefault();
+// UI state
+const [errorMsg, setErrorMsg] = useState("");
+const [isSubmitting, setIsSubmitting] = useState(false);
 
-    if (!name || !email || !password) {
-      setErrorMsg("All fields are required.");
-      return;
-    }
+function handleRegister(e) {
+e.preventDefault();
 
-    if (password.length < 6) {
-      setErrorMsg("Password should be at least 6 characters.");
-      return;
-    }
+```
+// validation
+if (!name || !email || !password) {
+  setErrorMsg("All fields are required.");
+  return;
+}
 
-    setErrorMsg("");
-    alert("Registered! Will connect to backend later.");
-  }
+if (!email.includes("@")) {
+  setErrorMsg("Please enter a valid email address.");
+  return;
+}
 
-  return (
-    <div className="auth-wrapper">
-      <div className="auth-card">
+if (password.length < 6) {
+  setErrorMsg("Password should be at least 6 characters.");
+  return;
+}
 
-        <h2>Create Account</h2>
-        <p className="auth-tagline">Join as a coordinator or instructor</p>
+// simulate loading
+setErrorMsg("");
+setIsSubmitting(true);
 
-        {errorMsg && (
-          <div className="error-box">{errorMsg}</div>
-        )}
+setTimeout(() => {
+  setIsSubmitting(false);
+  alert("Registration successful! Backend integration coming soon.");
+}, 800);
+```
 
-        <form onSubmit={handleRegister}>
+}
 
-          <label htmlFor="name">Full Name</label>
-          <input
-            id="name"
-            type="text"
-            placeholder="Your full name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+return ( <div className="auth-wrapper"> <div className="auth-card">
 
-          <label htmlFor="reg-email">Email</label>
-          <input
-            id="reg-email"
-            type="email"
-            placeholder="yourname@college.edu"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+```
+    <h2>Create Account</h2>
+    <p className="auth-tagline">
+      Join as a coordinator or instructor
+    </p>
 
-          <label htmlFor="reg-password">Password</label>
-          <input
-            id="reg-password"
-            type="password"
-            placeholder="Minimum 6 characters"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
+    {/* error message */}
+    {errorMsg && <div className="error-box">{errorMsg}</div>}
 
-          {/* role dropdown */}
-          <label htmlFor="role">I am a</label>
-          <select
-            id="role"
-            value={role}
-            onChange={(e) => setRole(e.target.value)}
-            className="role-select"
-          >
-            <option value="coordinator">College Coordinator</option>
-            <option value="instructor">Instructor</option>
-          </select>
+    <form onSubmit={handleRegister}>
 
-          <button type="submit" className="submit-btn">
-            Register
-          </button>
+      <label htmlFor="name">Full Name</label>
+      <input
+        id="name"
+        type="text"
+        placeholder="Your full name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
 
-        </form>
+      <label htmlFor="reg-email">Email Address</label>
+      <input
+        id="reg-email"
+        type="email"
+        placeholder="yourname@college.edu"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
 
-        <p className="switch-link">
-          Already have an account? <Link to="/login">Login</Link>
-        </p>
+      <label htmlFor="reg-password">Password</label>
+      <input
+        id="reg-password"
+        type="password"
+        placeholder="Minimum 6 characters"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
 
-      </div>
-    </div>
-  );
+      {/* role dropdown */}
+      <label htmlFor="role">I am a</label>
+      <select
+        id="role"
+        value={role}
+        onChange={(e) => setRole(e.target.value)}
+        className="role-select"
+      >
+        <option value="coordinator">College Coordinator</option>
+        <option value="instructor">Instructor</option>
+      </select>
+
+      {/* submit button */}
+      <button
+        type="submit"
+        className="submit-btn"
+        disabled={isSubmitting}
+      >
+        {isSubmitting ? "Creating account..." : "Register"}
+      </button>
+
+    </form>
+
+    <p className="switch-link">
+      Already have an account? <Link to="/login">Login</Link>
+    </p>
+
+  </div>
+</div>
+
+
+);
 }
 
 export default Register;

@@ -1,81 +1,93 @@
 // Login page - email and password form with validation
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
-  // storing what user types
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+// form state
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
 
-  // for showing error messages
-  const [errorMsg, setErrorMsg] = useState("");
+// error handling
+const [errorMsg, setErrorMsg] = useState("");
+const [isSubmitting, setIsSubmitting] = useState(false);
 
-  function handleLogin(e) {
-    // stop page from refreshing on submit
-    e.preventDefault();
+function handleLogin(e) {
+e.preventDefault();
 
-    // simple checks before submitting
-    if (email === "" || password === "") {
-      setErrorMsg("Please fill in both fields.");
-      return;
-    }
+```
+// basic validation
+if (!email || !password) {
+  setErrorMsg("Please fill in both fields.");
+  return;
+}
 
-    if (!email.includes("@")) {
-      setErrorMsg("That doesn't look like a valid email.");
-      return;
-    }
+if (!email.includes("@")) {
+  setErrorMsg("Please enter a valid email address.");
+  return;
+}
 
-    // clear error if everything looks fine
-    setErrorMsg("");
-    alert("Login works! Will connect to backend later.");
-  }
+// simulate loading state
+setErrorMsg("");
+setIsSubmitting(true);
 
-  return (
-    <div className="auth-wrapper">
-      <div className="auth-card">
+setTimeout(() => {
+  setIsSubmitting(false);
+  alert("Login successful! Backend integration coming soon.");
+}, 800);
+```
 
-        <h2>Welcome Back</h2>
-        <p className="auth-tagline">Login to manage your bookings</p>
+}
 
-        {/* show error only when there is one */}
-        {errorMsg && (
-          <div className="error-box">{errorMsg}</div>
-        )}
+return ( <div className="auth-wrapper"> <div className="auth-card">
 
-        <form onSubmit={handleLogin}>
+```
+    <h2>Welcome Back</h2>
+    <p className="auth-tagline">Login to manage your bookings</p>
 
-          <label htmlFor="email">Email Address</label>
-          <input
-            id="email"
-            type="email"
-            placeholder="yourname@college.edu"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+    {/* error message */}
+    {errorMsg && <div className="error-box">{errorMsg}</div>}
 
-          <label htmlFor="password">Password</label>
-          <input
-            id="password"
-            type="password"
-            placeholder="Enter your password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
+    <form onSubmit={handleLogin}>
 
-          <button type="submit" className="submit-btn">
-            Login
-          </button>
+      <label htmlFor="email">Email Address</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="yourname@college.edu"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
 
-        </form>
+      <label htmlFor="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Enter your password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
 
-        <p className="switch-link">
-          New here? <Link to="/register">Create an account</Link>
-        </p>
+      <button 
+        type="submit" 
+        className="submit-btn"
+        disabled={isSubmitting}
+      >
+        {isSubmitting ? "Logging in..." : "Login"}
+      </button>
 
-      </div>
-    </div>
-  );
+    </form>
+
+    <p className="switch-link">
+      New here? <Link to="/register">Create an account</Link>
+    </p>
+
+  </div>
+</div>
+
+
+);
 }
 
 export default Login;
