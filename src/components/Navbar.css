@@ -1,84 +1,128 @@
-.navbar{
-    background-color: #2e7d32;
-    padding: 0 20px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* stays on top while scrolling*/
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* Navbar container */
+.navbar {
+background-color: #2e7d32;
+padding: 0 20px;
+height: 60px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+/* stays on top while scrolling */
+position: sticky;
+top: 0;
+z-index: 1000;
+
+/* subtle shadow for depth */
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-.logo{
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-/* nav links shown as row on desktop */
-.nav-links{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.nav-links a{
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-.nav-links a:hover{
-    text-decoration: underline;
-}
-/* register looks like button*/
-.register-link{
-    background-color: white;
-    color: #2e7d32 !important;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-weight: 600;
+/* Logo styling */
+.logo {
+color: white;
+font-size: 1.15rem;
+font-weight: bold;
+text-decoration: none;
 }
 
-/* hide hamburger on big screens */
-.hamburger-btn{
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.4rem;
-    cursor: pointer;
+/* Navigation links (desktop view) */
+.nav-links {
+list-style: none;
+display: flex;
+gap: 20px;
+align-items: center;
+
+transition: all 0.3s ease;
 }
-/* mobile styles */
-@media (max-width: 768px){
-    /* show hamburger icon*/
-    .hamburger-btn{
-        display: block;
-    }
-    /* hide nav links by default */
-    .nav-links{
-        display: none;
-        flex-direction: column;
-        position :absolute;
-        top: 60px;
-        left:0;
-        right:0;
-        background-color: #2e7d32;
-        padding: 16px 20px;
-        gap:  14px;
-    }
-    /* show links when menu is open*/
-    .nav-links.open{
-        display: flex;
-    }
+
+/* Links */
+.nav-links a {
+color: white;
+text-decoration: none;
+font-size: 0.9rem;
+
+transition: color 0.2s ease;
 }
-/* force hide hamburger on desktop - override fix */
+
+/* Hover effect */
+.nav-links a:hover {
+color: #c8f7c5;
+}
+
+/* Active link highlight (for NavLink) */
+.nav-links a.active {
+color: #c8f7c5;
+font-weight: 600;
+}
+
+/* Register button style */
+.register-link {
+background-color: white;
+color: #2e7d32 !important;
+padding: 8px 16px;
+border-radius: 20px;
+font-weight: 600;
+
+transition: all 0.2s ease;
+}
+
+/* Register hover effect */
+.register-link:hover {
+background-color: #e8f5e9;
+transform: translateY(-1px);
+}
+
+/* Hamburger button (hidden on desktop) */
+.hamburger-btn {
+display: none;
+background: none;
+border: none;
+color: white;
+font-size: 1.4rem;
+cursor: pointer;
+}
+
+/* Hamburger icon styling */
+.menu-icon {
+font-size: 22px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+/* Show hamburger */
+.hamburger-btn {
+display: block;
+}
+
+/* Hide links initially */
+.nav-links {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 60px;
+left: 0;
+right: 0;
+background-color: #2e7d32;
+padding: 0 24px;
+gap: 14px;
+
+
+}
+
+/* Show links when menu is open */
+.nav-links.open {
+display: flex;
+}
+}
+
+/* Force hide hamburger on desktop */
 @media (min-width: 769px) {
-  .hamburger-btn {
-    display: none !important;
-  }
+.hamburger-btn {
+display: none !important;
 }
+}
+
 
 
 

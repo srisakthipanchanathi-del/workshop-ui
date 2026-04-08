@@ -1,17 +1,79 @@
 /* resetting default browser styles */
-*{
+* {
   margin: 0;
-  padding : 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body{
+/* base body styling */
+body {
   font-family: 'Segoe UI', sans-serif;
-  background-color:#f4f6f8;
+  background-color: #f4f6f8;
   color: #222;
 }
 
-/* make sure the page is tall enough so footer stays at bottom */
-.maincontent{
-  min-height: calc(100vh-130px);
+/* ensure page fills screen (for footer placement) */
+.maincontent {
+  min-height: calc(100vh - 130px);
 }
+
+/* spacing system */
+.container {
+  padding: 0 16px;
+}
+
+.section {
+  padding: 32px 16px;
+}
+
+/* typography */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* buttons (global behavior) */
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* hover effect */
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* primary button style */
+.primary-btn {
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+}
+
+/* primary button hover */
+.primary-btn:hover:not(:disabled) {
+  background-color: #27ae60;
+}
+
+/* disabled button state */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
