@@ -115,8 +115,8 @@ While improving the UI, I made some practical trade-offs:
 </tr>
 
 <tr>
-<td><img src="screenshots/before/before.pngbefore.png" width="400"/></td>
-<td><img src="screenshots/before/before2.pngbefore2.png" width="400"/></td>
+<td><img src="screenshots/before/before.png" width="400"/></td>
+<td><img src="screenshots/before/before2.png" width="400"/></td>
 </tr>
 </table>
 
@@ -133,9 +133,9 @@ While improving the UI, I made some practical trade-offs:
 </tr>
 
 <tr>
-<td><img src="screenshots/after/desktop-home.pngdesktop-home.png" width="300"/></td>
-<td><img src="screenshots/after/desktop-home2.pngdesktop-home2.png" width="300"/></td>
-<td><img src="screenshots/after/desktop-register copy.pngdesktop-register.png" width="300"/></td>
+<td><img src="screenshots/after/desktop-home.png" width="300"/></td>
+<td><img src="screenshots/after/desktop-home2.png" width="300"/></td>
+<td><img src="screenshots/after/desktop-register.png" width="300"/></td>
 </tr>
 </table>
 
@@ -145,15 +145,14 @@ While improving the UI, I made some practical trade-offs:
 <table>
 <tr>
 <td align="center"><b>Home</b></td>
-<td align="center"><b>Alt View</b></td>
 <td align="center"><b>Login</b></td>
 <td align="center"><b>Register</b></td>
 </tr>
 
 <tr>
-<td><img src="screenshots/after/mobile/mobile-home.pngmobile-home.png" width="180"/></td>
-<td><img src="screenshots/after/mobile/mobile-login.pngmobile-home2.png" width="180"/></td>
-<td><img src="screenshots/after/mobile/mobile-register.pngmobile-register.png" width="180"/></td>
+<td><img src="screenshots/after/mobile/mobile-home.png" width="180"/></td>
+<td><img src="screenshots/after/mobile/mobile-login.png" width="180"/></td>
+<td><img src="screenshots/after/mobile/mobile-register.png" width="180"/></td>
 </tr>
 </table>
 
