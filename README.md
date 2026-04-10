@@ -5,34 +5,23 @@ This project is my submission for the FOSSEE Python Screening Task.
 
 I redesigned the workshop booking portal frontend using React, focusing on improving usability, responsiveness, and visual clarity — while preserving the original functionality.
 
-##  Table of Contents
-	•	Overview￼
-	•	Tech Stack￼
-	•	Setup Instructions￼
-	•	What I Learned￼
-	•	Design Principles￼
-	•	Responsiveness Approach￼
-	•	Design vs Performance Trade-offs￼
-	•	Challenges Faced￼
-	•	Features￼
-	•	Before & After￼
-	•	Conclusion￼
-
-##  Overview
-
-The original FOSSEE workshop booking platform was built using Django templates with limited responsiveness and UI structure.
-
 This project reimagines the frontend using React to create:
 	•	A clean and modern interface
 	•	Improved navigation and layout
 	•	Fully responsive experience across devices
 
+##  Table of Contents
 
-## Tech Stack
-
-	•	React (JavaScript)
-	•	CSS (Custom styling)
-	•	React Router
+- [Setup Instructions](#setup-instructions)
+- [Tech Stack](#tech-stack)
+- [What I Learnt](#what-i-learnt)
+- [Design Principles](#design-principles)
+- [Responsiveness Approach](#responsiveness-approach)
+- [Design vs Performance Trade-offs](#design-vs-performance-trade-offs)
+- [Challenges Faced](#challenges-faced)
+- [Features](#features)
+- [Before & After](#before--after)
+- [Conclusion](#conclusion)
 
 ## Setup Instructions
 
@@ -50,7 +39,14 @@ This project reimagines the frontend using React to create:
 
 5. Open http://localhost:3000 in your browser
 
-## What I Learned
+## Tech Stack
+
+	•	React (JavaScript)
+	•	CSS (Custom styling)
+	•	React Router
+
+
+## What I Learnt
 
 	•	React component structure and reuse
 	•	State management using useState
@@ -62,8 +58,6 @@ This project reimagines the frontend using React to create:
 
 ## Design Principles Used
 
-While working on this redesign, I focused on a few key design principles to improve usability:
- Design Principles
 	•	Visual Hierarchy
 Clear emphasis on key elements using spacing, contrast, and typography.
 	•	Consistency
@@ -75,8 +69,6 @@ Readable text, proper spacing, and user-friendly layout
 
 ## Responsiveness Approach
 
-The application is designed with a mobile-first mindset, considering that most users access such platforms from their phones.
-
 	•	Mobile-first design
 	•	Flexbox-based layouts
 	•	Adaptive spacing and typography
@@ -85,11 +77,9 @@ The application is designed with a mobile-first mindset, considering that most u
 
 ## Design vs Performance Trade-offs
 
-While improving the UI, I made some practical trade-offs:
-
-  . Focused on clean and efficient styling instead of heavy animations to maintain performance.
-  . Avoided large external UI libraries to keep the application lightweight.
-  .Kept components simple and reusable to ensure maintainability.
+    •   Avoided heavy animations to maintain speed
+	•	No bulky UI libraries used
+	•	Focused on reusable, lightweight components
 
 ## Challenges Faced
 
@@ -109,11 +99,11 @@ While improving the UI, I made some practical trade-offs:
 	•	Fully responsive UI
 
 ## Screenshots
-## 📸 Before & After
+## Before & After
 
 ---
 
-## 🔹 Before — Original Django Version
+## Before — Original Django Version
 
 <table>
 <tr>
@@ -128,9 +118,9 @@ While improving the UI, I made some practical trade-offs:
 </table>
 
 ---
-## 🚀 After — My React Redesign
+## After — My React Redesign
 
-### 💻 Desktop
+### Desktop
 
 <table>
 <tr>
