@@ -1,22 +1,22 @@
-# 🚀 FOSSEE Workshop Booking – UI/UX Enhancement (React)
+# FOSSEE Workshop Booking – UI/UX Enhancement (React)
 
 Hi, I’m Sri Sakthi P, a first-year student from VIT Chennai.
 This project is my submission for the FOSSEE Python Screening Task.
 
 I redesigned the workshop booking portal frontend using React, focusing on improving usability, responsiveness, and visual clarity — while preserving the original functionality.
 
-## 📑 Table of Contents
-	•	✨ Overview￼
-	•	🛠 Tech Stack￼
-	•	🎯 Design Principles￼
-	•	📱 Responsiveness Approach￼
-	•	⚖️ Design vs Performance Trade-offs￼
-	•	🚧 Challenges Faced￼
-	•	🚀 Features￼
-	•	📸 Before & After￼
-	•	⚙️ Setup Instructions￼
-	•	📚 What I Learned￼
-	•	🏁 Conclusion￼
+##  Table of Contents
+	•	Overview￼
+	•	Tech Stack￼
+	•	Setup Instructions￼
+	•	What I Learned￼
+	•	Design Principles￼
+	•	Responsiveness Approach￼
+	•	Design vs Performance Trade-offs￼
+	•	Challenges Faced￼
+	•	Features￼
+	•	Before & After￼
+	•	Conclusion￼
 
 ##  Overview
 
@@ -33,6 +33,32 @@ This project reimagines the frontend using React to create:
 	•	React (JavaScript)
 	•	CSS (Custom styling)
 	•	React Router
+
+## Setup Instructions
+
+1. Clone this repo
+   git clone https://github.com/srisakthipanchanathi-del/workshop-ui.git
+
+2. Go into the project folder
+   cd workshop-ui
+
+3. Install packages
+   npm install
+
+4. Run the app
+   npm start
+
+5. Open http://localhost:3000 in your browser
+
+## What I Learned
+
+	•	React component structure and reuse
+	•	State management using useState
+	•	Routing with React Router
+	•	Responsive design techniques
+	•	Debugging frontend issues
+	•	Importance of incremental Git commits
+
 
 ## Design Principles Used
 
@@ -61,9 +87,9 @@ The application is designed with a mobile-first mindset, considering that most u
 
 While improving the UI, I made some practical trade-offs:
 
-1. Focused on clean and efficient styling instead of heavy animations to maintain performance.
-2. Avoided large external UI libraries to keep the application lightweight.
-3. Kept components simple and reusable to ensure maintainability.
+  . Focused on clean and efficient styling instead of heavy animations to maintain performance.
+  . Avoided large external UI libraries to keep the application lightweight.
+  .Kept components simple and reusable to ensure maintainability.
 
 ## Challenges Faced
 
@@ -81,25 +107,6 @@ While improving the UI, I made some practical trade-offs:
 	•	Register form with role selection
 	•	Reusable components (Navbar, Footer, Cards)
 	•	Fully responsive UI
-
-## Setup Instructions
-
-1. Clone this repo
-   git clone https://github.com/srisakthipanchanathi-del/workshop-ui.git
-
-2. Go into the project folder
-   cd workshop-ui
-
-3. Install packages
-   npm install
-
-4. Run the app
-   npm start
-
-5. Open http://localhost:3000 in your browser
-
-
-
 
 ## Screenshots
 ## 📸 Before & After
@@ -156,16 +163,6 @@ While improving the UI, I made some practical trade-offs:
 </tr>
 </table>
 
-
----
-## What I Learned
-
-	•	React component structure and reuse
-	•	State management using useState
-	•	Routing with React Router
-	•	Responsive design techniques
-	•	Debugging frontend issues
-	•	Importance of incremental Git commits
 
 ## Conclusion
 This project helped me shift from simply writing code to thinking from a user’s perspective.
