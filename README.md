@@ -10,6 +10,77 @@ This project reimagines the frontend using React to create:
 	•	Improved navigation and layout
 	•	Fully responsive experience across devices
 
+🔗 Live Repo: https://github.com/srisakthipanchanathi-del/workshop-ui
+
+## Project Structure
+
+•/components → reusable UI
+•/pages → main pages
+•/screenshots → before/after comparison
+
+## Problem Statement
+
+The original interface had several usability issues:
+	•	Lack of clear visual hierarchy
+	•	Poor differentiation between available and full workshops
+	•	Limited responsiveness (not mobile-friendly)
+	•	No structured component-based design
+
+ This made it difficult for users to quickly scan workshops and take action.
+
+## Solution Overview
+
+To solve these issues, I redesigned the UI with:
+	•	Card-based layout for better structure
+	•	Clear status indicators (Available / Full / Pending)
+	•	Prominent “Book Now” call-to-action
+	•	Improved spacing, typography, and alignment
+	•	Fully responsive design
+
+These changes make the interface more intuitive and efficient.
+
+## UX Thinking (Key Improvement)
+
+This redesign is not just visual — it improves how users interact with the system:
+User Flow
+
+    •Browse → Identify workshop → Click → Confirm booking
+
+ Decision Making
+	•	Clear availability badges reduce confusion
+	•	Important actions are highlighted
+
+Clarity Improvements
+	•	Reduced cognitive load
+	•	Improved readability
+	•	Faster scanning of content
+
+ Overall, users can complete tasks faster with less effort.
+
+
+## UI Improvements
+
+Buttons
+	•	“Book Now” made visually prominent
+	•	Disabled state for full workshops
+
+Spacing
+	•	Consistent spacing system (8px / 16px / 24px)
+	•	Better layout structure
+
+Visual Hierarchy
+	•	Titles are larger and bold
+	•	Descriptions are lighter
+	•	Metadata is subtle
+
+Makes the UI feel clean, modern, and professional.
+
+Accessibility Improvements
+	•	Semantic HTML structure
+	•	Proper contrast for readability
+	•	Keyboard-friendly interactions
+
+
 ##  Table of Contents
 
 - [Setup Instructions](#setup-instructions)
@@ -25,19 +96,19 @@ This project reimagines the frontend using React to create:
 
 ## Setup Instructions
 
-1. Clone this repo
+• Clone this repo
    git clone https://github.com/srisakthipanchanathi-del/workshop-ui.git
 
-2. Go into the project folder
+•  Go into the project folder
    cd workshop-ui
 
-3. Install packages
+• Install packages
    npm install
 
-4. Run the app
+• Run the app
    npm start
 
-5. Open http://localhost:3000 in your browser
+• Open http://localhost:3000 in your browser
 
 ## Tech Stack
 
@@ -127,17 +198,20 @@ Readable text, proper spacing, and user-friendly layout
 <td align="center"><b>Home Page</b></td>
 <td align="center"><b>Login Page</b></td>
 <td align="center"><b>Register Page</b></td>
+<td align="center"><b>Booking Confirmation Page</b></td>
 </tr>
 
 <tr>
 <td><img src="screenshots/after/desktop-home.png" width="300"/></td>
 <td><img src="screenshots/after/desktop-home2.png" width="300"/></td>
 <td><img src="screenshots/after/desktop-register.png" width="300"/></td>
+<td><img src="screenshots/after/after4.png" width="300"/></td>
+
 </tr>
 </table>
 
 ---
-### 📱 Mobile
+### Mobile
 
 <table>
 <tr>
@@ -158,9 +232,9 @@ Readable text, proper spacing, and user-friendly layout
 This project helped me shift from simply writing code to thinking from a user’s perspective.
 
 I focused on improving:
-	•	Clarity
-	•	Navigation
-	•	Responsiveness
+•	Clarity
+•	Navigation
+•	Responsiveness
 
 while keeping the design simple, efficient, and scalable.
 
