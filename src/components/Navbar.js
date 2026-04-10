@@ -19,7 +19,7 @@ setIsOpen(false);
 
 return ( <nav className="navbar">
 
-```
+
   {/* logo */}
   <NavLink to="/" className="logo" onClick={closeMenu}>
     FOSSEE Workshops
