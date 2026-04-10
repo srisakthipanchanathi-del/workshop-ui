@@ -1,93 +1,97 @@
-// Login page - email and password form with validation
-
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
-// form state
-const [email, setEmail] = useState("");
-const [password, setPassword] = useState("");
 
-// error handling
-const [errorMsg, setErrorMsg] = useState("");
-const [isSubmitting, setIsSubmitting] = useState(false);
+  // 🔥 navigation
+  const navigate = useNavigate();
 
-function handleLogin(e) {
-e.preventDefault();
+  // form state
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-```
-// basic validation
-if (!email || !password) {
-  setErrorMsg("Please fill in both fields.");
-  return;
-}
+  // error handling
+  const [errorMsg, setErrorMsg] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-if (!email.includes("@")) {
-  setErrorMsg("Please enter a valid email address.");
-  return;
-}
+  function handleLogin(e) {
+    e.preventDefault();
 
-// simulate loading state
-setErrorMsg("");
-setIsSubmitting(true);
+    // basic validation
+    if (!email || !password) {
+      setErrorMsg("Please fill in both fields.");
+      return;
+    }
 
-setTimeout(() => {
-  setIsSubmitting(false);
-  alert("Login successful! Backend integration coming soon.");
-}, 800);
-```
+    if (!email.includes("@")) {
+      setErrorMsg("Please enter a valid email address.");
+      return;
+    }
 
-}
+    // simulate loading state
+    setErrorMsg("");
+    setIsSubmitting(true);
 
-return ( <div className="auth-wrapper"> <div className="auth-card">
+    setTimeout(() => {
+      setIsSubmitting(false);
 
-```
-    <h2>Welcome Back</h2>
-    <p className="auth-tagline">Login to manage your bookings</p>
+      // ✅ success message (optional)
+      alert("Login successful!");
 
-    {/* error message */}
-    {errorMsg && <div className="error-box">{errorMsg}</div>}
+      // 🔥 REDIRECT TO BOOKING CONFIRMATION
+      navigate("/booking-confirmed");
 
-    <form onSubmit={handleLogin}>
+    }, 800);
+  }
 
-      <label htmlFor="email">Email Address</label>
-      <input
-        id="email"
-        type="email"
-        placeholder="yourname@college.edu"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+  return (
+    <div className="auth-wrapper">
+      <div className="auth-card">
 
-      <label htmlFor="password">Password</label>
-      <input
-        id="password"
-        type="password"
-        placeholder="Enter your password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
+        <h2>Welcome Back</h2>
+        <p className="auth-tagline">Login to manage your bookings</p>
 
-      <button 
-        type="submit" 
-        className="submit-btn"
-        disabled={isSubmitting}
-      >
-        {isSubmitting ? "Logging in..." : "Login"}
-      </button>
+        {/* error message */}
+        {errorMsg && <div className="error-box">{errorMsg}</div>}
 
-    </form>
+        <form onSubmit={handleLogin}>
 
-    <p className="switch-link">
-      New here? <Link to="/register">Create an account</Link>
-    </p>
+          <label htmlFor="email">Email Address</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="yourname@college.edu"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-  </div>
-</div>
+          <label htmlFor="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter your password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
+          <button
+            type="submit"
+            className="submit-btn"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Logging in..." : "Login"}
+          </button>
 
-);
+        </form>
+
+        <p className="switch-link">
+          New here? <Link to="/register">Create an account</Link>
+        </p>
+
+      </div>
+    </div>
+  );
 }
 
 export default Login;
