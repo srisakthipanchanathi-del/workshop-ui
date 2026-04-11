@@ -1,6 +1,7 @@
 # FOSSEE Workshop Booking – UI/UX Enhancement (React)
 
-Hi, I’m Sri Sakthi P, a first-year student from VIT Chennai (Integrated Mtech CSE-Data Science)
+Hi, I’m Sri Sakthi P, a first-year student from VIT Chennai (Integrated Mtech CSE-Data Science).
+
 This project is my submission for the FOSSEE Python Screening Task.
 
 I redesigned the workshop booking portal frontend using React, focusing on improving usability, responsiveness, and visual clarity — while preserving the original functionality.
