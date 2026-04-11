@@ -6,7 +6,7 @@ This project is my submission for the FOSSEE Python Screening Task.
 I redesigned the workshop booking portal frontend using React, focusing on improving usability, responsiveness, and visual clarity — while preserving the original functionality.
 
 This project reimagines the frontend using React to create:
- •   A clean and modern interface
+ •  A clean and modern interface
  •	Improved navigation and layout
  •	Fully responsive experience across devices
 
