@@ -9,9 +9,9 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import BookingConfirmed from "./pages/BookingConfirmed";
- 
 import "./App.css";
- 
+import LoginSuccess from "./pages/LoginSuccess";
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +26,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/booking-confirmed" element={<BookingConfirmed />} />
+          <Route path="/login-success" element={<LoginSuccess />} />
+          
         </Routes>
       </main>
  

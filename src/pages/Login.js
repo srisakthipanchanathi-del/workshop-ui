@@ -4,7 +4,7 @@ import "./Login.css";
 
 function Login() {
 
-  // 🔥 navigation
+  // navigation
   const navigate = useNavigate();
 
   // form state
@@ -36,11 +36,10 @@ function Login() {
     setTimeout(() => {
       setIsSubmitting(false);
 
-      // ✅ success message (optional)
-      alert("Login successful!");
+      // REMOVED: alert("Login successful!") -- no longer needed
 
-      // 🔥 REDIRECT TO BOOKING CONFIRMATION
-      navigate("/booking-confirmed");
+      // CHANGED: redirect to the new login success page
+      navigate("/login-success");
 
     }, 800);
   }
