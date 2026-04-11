@@ -6,17 +6,17 @@ This project is my submission for the FOSSEE Python Screening Task.
 I redesigned the workshop booking portal frontend using React, focusing on improving usability, responsiveness, and visual clarity — while preserving the original functionality.
 
 This project reimagines the frontend using React to create:
-	•	A clean and modern interface
-	•	Improved navigation and layout
-	•	Fully responsive experience across devices
+ •   A clean and modern interface
+ •	Improved navigation and layout
+ •	Fully responsive experience across devices
 
 🔗 Live Repo: https://github.com/srisakthipanchanathi-del/workshop-ui
 
 ## Project Structure
 
-•/components → reusable UI
-•/pages → main pages
-•/screenshots → before/after comparison
+ •/components → reusable UI
+ •/pages → main pages
+ •/screenshots → before/after comparison
 
 ## Problem Statement
 
@@ -30,7 +30,7 @@ The original interface had several usability issues:
 
 ## Solution Overview
 
-To solve these issues, I redesigned the UI with:
+ To solve these issues, I redesigned the UI with:
 	•	Card-based layout for better structure
 	•	Clear status indicators (Available / Full / Pending)
 	•	Prominent “Book Now” call-to-action
@@ -42,7 +42,7 @@ These changes make the interface more intuitive and efficient.
 ## UX Thinking (Key Improvement)
 
 This redesign is not just visual — it improves how users interact with the system:
-User Flow
+ User Flow
 
     •Browse → Identify workshop → Click → Confirm booking
 
@@ -50,7 +50,7 @@ User Flow
 	•	Clear availability badges reduce confusion
 	•	Important actions are highlighted
 
-Clarity Improvements
+ Clarity Improvements
 	•	Reduced cognitive load
 	•	Improved readability
 	•	Faster scanning of content
@@ -60,22 +60,22 @@ Clarity Improvements
 
 ## UI Improvements
 
-Buttons
+ Buttons
 	•	“Book Now” made visually prominent
 	•	Disabled state for full workshops
 
-Spacing
+ Spacing
 	•	Consistent spacing system (8px / 16px / 24px)
 	•	Better layout structure
 
-Visual Hierarchy
+ Visual Hierarchy
 	•	Titles are larger and bold
 	•	Descriptions are lighter
 	•	Metadata is subtle
 
-Makes the UI feel clean, modern, and professional.
+ Makes the UI feel clean, modern, and professional.
 
-Accessibility Improvements
+ Accessibility Improvements
 	•	Semantic HTML structure
 	•	Proper contrast for readability
 	•	Keyboard-friendly interactions
@@ -130,11 +130,11 @@ Accessibility Improvements
 ## Design Principles Used
 
 	•	Visual Hierarchy
-Clear emphasis on key elements using spacing, contrast, and typography.
+  Clear emphasis on key elements using spacing, contrast, and typography.
 	•	Consistency
-Reusable UI components for uniform experience.
+  Reusable UI components for uniform experience.
 	•	Simplicity
-Clean and distraction-free interface.
+  Clean and distraction-free interface.
 	•	Accessibility
 Readable text, proper spacing, and user-friendly layout
 
