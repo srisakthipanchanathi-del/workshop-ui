@@ -5,80 +5,95 @@ This project is my submission for the FOSSEE Python Screening Task.
 
 I redesigned the workshop booking portal frontend using React, focusing on improving usability, responsiveness, and visual clarity — while preserving the original functionality.
 
+## About This Project
+
 This project reimagines the frontend using React to create:
- •  A clean and modern interface
- •	Improved navigation and layout
- •	Fully responsive experience across devices
+
+- A clean and modern interface
+- Improved navigation and layout
+- Fully responsive experience across devices
 
 🔗 Live Repo: https://github.com/srisakthipanchanathi-del/workshop-ui
 
+---
+
 ## Project Structure
 
- •/components → reusable UI
- •/pages → main pages
- •/screenshots → before/after comparison
+- `/components` → reusable UI
+- `/pages` → main pages
+- `/screenshots` → before/after comparison
+
+---
 
 ## Problem Statement
 
 The original interface had several usability issues:
-	•	Lack of clear visual hierarchy
-	•	Poor differentiation between available and full workshops
-	•	Limited responsiveness (not mobile-friendly)
-	•	No structured component-based design
 
- This made it difficult for users to quickly scan workshops and take action.
+- Lack of clear visual hierarchy
+- Poor differentiation between available and full workshops
+- Limited responsiveness (not mobile-friendly)
+- No structured component-based design
+
+This made it difficult for users to quickly scan workshops and take action.
+
+---
 
 ## Solution Overview
 
- To solve these issues, I redesigned the UI with:
-	•	Card-based layout for better structure
-	•	Clear status indicators (Available / Full / Pending)
-	•	Prominent “Book Now” call-to-action
-	•	Improved spacing, typography, and alignment
-	•	Fully responsive design
+To solve these issues, I redesigned the UI with:
+
+- Card-based layout for better structure
+- Clear status indicators (Available / Full / Pending)
+- Prominent "Book Now" call-to-action
+- Improved spacing, typography, and alignment
+- Fully responsive design
 
 These changes make the interface more intuitive and efficient.
 
-## UX Thinking (Key Improvement)
+---
 
-This redesign is not just visual — it improves how users interact with the system:
- User Flow
+## UX Thinking
 
-    •Browse → Identify workshop → Click → Confirm booking
+This redesign is not just visual — it improves how users interact with the system.
 
- Decision Making
-	•	Clear availability badges reduce confusion
-	•	Important actions are highlighted
+**User Flow**
 
- Clarity Improvements
-	•	Reduced cognitive load
-	•	Improved readability
-	•	Faster scanning of content
+Browse → Identify workshop → Click → Confirm booking
 
- Overall, users can complete tasks faster with less effort.
+**Decision Making**
+- Clear availability badges reduce confusion
+- Important actions are highlighted
 
+**Clarity Improvements**
+- Reduced cognitive load
+- Improved readability
+- Faster scanning of content
+
+Overall, users can complete tasks faster with less effort.
+
+---
 
 ## UI Improvements
 
- Buttons
-	•	“Book Now” made visually prominent
-	•	Disabled state for full workshops
+**Buttons**
+- "Book Now" made visually prominent
+- Disabled state for full workshops
 
- Spacing
-	•	Consistent spacing system (8px / 16px / 24px)
-	•	Better layout structure
+**Spacing**
+- Consistent spacing system (8px / 16px / 24px)
+- Better layout structure
 
- Visual Hierarchy
-	•	Titles are larger and bold
-	•	Descriptions are lighter
-	•	Metadata is subtle
+**Visual Hierarchy**
+- Titles are larger and bold
+- Descriptions are lighter
+- Metadata is subtle
 
- Makes the UI feel clean, modern, and professional.
+Makes the UI feel clean, modern, and professional.
 
- Accessibility Improvements
-	•	Semantic HTML structure
-	•	Proper contrast for readability
-	•	Keyboard-friendly interactions
+**Accessibility**
+- Semantic HTML structure
+- Proper contrast for readability
+- Keyboard-friendly interactions
 
 
 ##  Table of Contents
@@ -197,16 +212,19 @@ Readable text, proper spacing, and user-friendly layout
 <tr>
 <td align="center"><b>Home Page</b></td>
 <td align="center"><b>Login Page</b></td>
-<td align="center"><b>Register Page</b></td>
-<td align="center"><b>Booking Confirmation Page</b></td>
 </tr>
-
 <tr>
 <td><img src="screenshots/after/desktop-home.png" width="300"/></td>
 <td><img src="screenshots/after/desktop-home2.png" width="300"/></td>
+</tr>
+
+<tr>
+<td align="center"><b>Register Page</b></td>
+<td align="center"><b>Booking Confirmation Page</b></td>
+</tr>
+<tr>
 <td><img src="screenshots/after/desktop-register.png" width="300"/></td>
 <td><img src="screenshots/after/after4.png" width="300"/></td>
-
 </tr>
 </table>
 
