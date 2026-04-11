@@ -207,7 +207,7 @@ Makes the UI feel clean, modern, and professional.
 <table>
 <tr>
 <td align="center"><b>Home Page</b></td>
-<td align="center"><b>Login Page</b></td>
+<td align="center"><b>Workshops Section</b></td>
 </tr>
 <tr>
 <td><img src="screenshots/after/desktop-home.png" width="300"/></td>
@@ -215,7 +215,7 @@ Makes the UI feel clean, modern, and professional.
 </tr>
 
 <tr>
-<td align="center"><b>Register Page</b></td>
+<td align="center"><b>Login Page</b></td>
 <td align="center"><b>Booking Confirmation Page</b></td>
 </tr>
 <tr>
@@ -224,13 +224,15 @@ Makes the UI feel clean, modern, and professional.
 </tr>
 
 <tr>
-<td align="center"><b>Login Success Page</b></td>
-<td></td>
+<td align="center"><b>Login Successful</b></td>
+<td align="center"><b>Register Page</b></td>
 </tr>
 <tr>
 <td><img src="screenshots/after/desktop-login.png" width="300"/></td>
-<td></td>
+<td><img src="screenshots/after/desktop-register2.png" width="300"/></td>
 </tr>
+
+
 </table>
 
 ---
@@ -252,17 +254,22 @@ Makes the UI feel clean, modern, and professional.
 
 
 ## Conclusion
-This project helped me shift from simply writing code to thinking from a user’s perspective.
 
-I focused on improving:
--	Clarity
--   Navigation
--   Responsiveness
+This project went beyond just a screening task,it changed the way I think about building interfaces.
 
-while keeping the design simple, efficient, and scalable.
+I focused on clarity, responsiveness, and navigation, making sure every interaction felt intentional.
 
-It was a valuable learning experience in building user-friendly interfaces.
+Keeping the design minimal was a conscious choice, because a clean interface always speaks louder than a heavy one.
 
-Designed and developed by Sri Sakthi P
+Overall, it was a genuinely rewarding experience.
+
+## Notes
+
+This project involved a frontend-only redesign, as the screening task required solely a UI overhaul. The Django backend remains untouched and would need further development to achieve full functionality. The React frontend can be connected to the existing API endpoints with minimal configuration once the backend is ready.
+
+---
+
+Designed and Developed by **Sri Sakthi P**
+VIT Chennai — Integrated Mtech CSE(DS),First Year
 
 
