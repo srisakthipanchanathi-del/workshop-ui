@@ -250,9 +250,9 @@ Readable text, proper spacing, and user-friendly layout
 This project helped me shift from simply writing code to thinking from a user’s perspective.
 
 I focused on improving:
-•	Clarity
-•	Navigation
-•	Responsiveness
+-	Clarity
+-   Navigation
+-   Responsiveness
 
 while keeping the design simple, efficient, and scalable.
 
