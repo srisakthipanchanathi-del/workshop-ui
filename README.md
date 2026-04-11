@@ -1,6 +1,6 @@
 # FOSSEE Workshop Booking – UI/UX Enhancement (React)
 
-Hi, I’m Sri Sakthi P, a first-year student from VIT Chennai (Integrated Mtech CSE-Data Science).
+Hi, I’m Sri Sakthi P
 
 This project is my submission for the FOSSEE Python Screening Task.
 
@@ -270,6 +270,6 @@ This project involved a frontend-only redesign, as the screening task required s
 ---
 
 Designed and Developed by **Sri Sakthi P**
-VIT Chennai — Integrated Mtech CSE(DS),First Year
+VIT Chennai — Integrated Mtech CSE(DS),First Year.
 
 
