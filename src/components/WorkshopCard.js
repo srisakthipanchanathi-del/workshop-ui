@@ -2,13 +2,12 @@ import "./WorkshopCard.css";
 import { useNavigate } from "react-router-dom";
 
 // each card shows one workshop's details
-function WorkshopCard({ title, description, instructor, date, status }) {
+function WorkshopCard({ title, description, instructor, date, status, seats, onBook }) {
 
-  // navigation
   const navigate = useNavigate();
 
-  // pick badge color based on availability
-  let badgeClass = "badge-orange"; // default – pending
+  // badge color
+  let badgeClass = "badge-orange";
   if (status === "Available") badgeClass = "badge-green";
   if (status === "Full") badgeClass = "badge-red";
 
@@ -24,21 +23,27 @@ function WorkshopCard({ title, description, instructor, date, status }) {
       <p className="w-desc">{description}</p>
 
       {/* metadata */}
-      {instructor && <p className="w-meta"> {instructor}</p>}
-      {date && <p className="w-meta"> {date}</p>}
+      {instructor && <p className="w-meta">{instructor}</p>}
+      {date && <p className="w-meta">{date}</p>}
+
+      {/*  NEW: seats display */}
+      <p className="w-meta">Seats left: {seats}</p>
 
       <button
         className="primary-btn w-btn"
-        disabled={status === "Full"}
-        
-        // THIS IS THE FIX
+        disabled={seats === 0 || status === "Full"}
         onClick={() => {
-          if (status !== "Full") {
+          if (seats > 0 && status !== "Full") {
+            
+            //  reduce seat (call parent function)
+            onBook(title);
+
+            // navigate after booking
             navigate("/booking-confirmed");
           }
         }}
       >
-        {status === "Full" ? "Full" : "Book Now"}
+        {seats === 0 || status === "Full" ? "Full" : "Book Now"}
       </button>
 
     </div>
