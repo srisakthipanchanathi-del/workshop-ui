@@ -6,7 +6,7 @@ function LoginSuccess() {
       <div className="auth-card">
 
         {/* success icon */}
-        <div style={{ fontSize: "3rem", marginBottom: "0.5rem" }}>✅</div>
+        <div style={{ fontSize: "3rem", marginBottom: "0.5rem" }}></div>
 
         <h2>Login Successful!</h2>
         <p className="auth-tagline">Welcome back! You're now logged in.</p>
