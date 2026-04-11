@@ -145,14 +145,10 @@ Makes the UI feel clean, modern, and professional.
 
 ## Design Principles Used
 
-	•	Visual Hierarchy
-  Clear emphasis on key elements using spacing, contrast, and typography.
-	•	Consistency
-  Reusable UI components for uniform experience.
-	•	Simplicity
-  Clean and distraction-free interface.
-	•	Accessibility
-Readable text, proper spacing, and user-friendly layout
+- Visual Hierarchy — Clear emphasis on key elements using spacing, contrast, and typography.
+- Consistency — Reusable UI components for uniform experience.
+- Simplicity — Clean and distraction-free interface.
+- Accessibility — Readable text, proper spacing, and user-friendly layout.
 
 ## Responsiveness Approach
 
@@ -206,7 +202,6 @@ Readable text, proper spacing, and user-friendly layout
 
 ---
 ## After — My React Redesign
-
 ### Desktop
 
 <table>
@@ -226,6 +221,15 @@ Readable text, proper spacing, and user-friendly layout
 <tr>
 <td><img src="screenshots/after/desktop-register.png" width="300"/></td>
 <td><img src="screenshots/after/after4.png" width="300"/></td>
+</tr>
+
+<tr>
+<td align="center"><b>Login Success Page</b></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="screenshots/after/desktop-login.png" width="300"/></td>
+<td></td>
 </tr>
 </table>
 
