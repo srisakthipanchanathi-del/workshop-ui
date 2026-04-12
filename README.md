@@ -4,7 +4,7 @@ Hi, I’m Sri Sakthi P
 
 This project is my submission for the FOSSEE Python Screening Task.
 
-I redesigned the workshop booking portal frontend using React, focusing on improving usability, responsiveness, and visual clarity — while preserving the original functionality.
+I redesigned the workshop booking portal frontend using React, focusing on improving usability, responsiveness, and visual clarity while preserving the original functionality.
 
 ## About This Project
 
@@ -14,9 +14,29 @@ This project reimagines the frontend using React to create:
 - Improved navigation and layout
 - Fully responsive experience across devices
 
-🔗 Live Repo: https://github.com/srisakthipanchanathi-del/workshop-ui
+Live Repo: https://github.com/srisakthipanchanathi-del/workshop-ui
 
 ---
+
+## Table of Contents
+
+- [Project Structure](#project-structure)
+- [Problem Statement](#problem-statement)
+- [Solution Overview](#solution-overview)
+- [UX Thinking](#ux-thinking)
+- [UI Improvements](#ui-improvements)
+- [Setup Instructions](#setup-instructions)
+- [Tech Stack](#tech-stack)
+- [What I Learnt](#what-i-learnt)
+- [Design Principles](#design-principles)
+- [Responsiveness Approach](#responsiveness-approach)
+- [Design vs Performance Trade-offs](#design-vs-performance-trade-offs)
+- [Challenges Faced](#challenges-faced)
+- [Features](#features)
+- [Before & After](#before--after)
+- [Conclusion](#conclusion)
+
+
 
 ## Project Structure
 
@@ -97,34 +117,21 @@ Makes the UI feel clean, modern, and professional.
 - Keyboard-friendly interactions
 
 
-##  Table of Contents
-
-- [Setup Instructions](#setup-instructions)
-- [Tech Stack](#tech-stack)
-- [What I Learnt](#what-i-learnt)
-- [Design Principles](#design-principles)
-- [Responsiveness Approach](#responsiveness-approach)
-- [Design vs Performance Trade-offs](#design-vs-performance-trade-offs)
-- [Challenges Faced](#challenges-faced)
-- [Features](#features)
-- [Before & After](#before--after)
-- [Conclusion](#conclusion)
-
 ## Setup Instructions
 
-• Clone this repo
+- Clone this repo
    git clone https://github.com/srisakthipanchanathi-del/workshop-ui.git
 
-•  Go into the project folder
+-  Go into the project folder
    cd workshop-ui
 
-• Install packages
+- Install packages
    npm install
 
-• Run the app
+- Run the app
    npm start
 
-• Open http://localhost:3000 in your browser
+- Open http://localhost:3000 in your browser
 
 ## Tech Stack
 
@@ -143,7 +150,7 @@ Makes the UI feel clean, modern, and professional.
 	•	Importance of incremental Git commits
 
 
-## Design Principles Used
+## Design Principles 
 
 - Visual Hierarchy — Clear emphasis on key elements using spacing, contrast, and typography.
 - Consistency — Reusable UI components for uniform experience.
@@ -152,7 +159,7 @@ Makes the UI feel clean, modern, and professional.
 
 ## Responsiveness Approach
 
-	•	Mobile-first design
+	•   Mobile-first design
 	•	Flexbox-based layouts
 	•	Adaptive spacing and typography
 	•	Tested across mobile, tablet, and desktop
@@ -171,7 +178,7 @@ Makes the UI feel clean, modern, and professional.
 	•	Ensuring consistent responsiveness
 	•	Balancing UI improvements with performance
 
-## Features Implemented
+## Features 
 
 	•	Responsive navbar with hamburger menu
 	•	Hero section with CTA
@@ -181,8 +188,8 @@ Makes the UI feel clean, modern, and professional.
 	•	Reusable components (Navbar, Footer, Cards)
 	•	Fully responsive UI
 
-## Screenshots
-## Before & After
+
+## Before & After 
 
 ---
 
@@ -249,6 +256,18 @@ Makes the UI feel clean, modern, and professional.
 <td><img src="screenshots/after/mobile/mobile-home.png" width="180"/></td>
 <td><img src="screenshots/after/mobile/mobile-login.png" width="180"/></td>
 <td><img src="screenshots/after/mobile/mobile-register.png" width="180"/></td>
+</tr>
+
+<tr>
+<td align="center"><b>Workshop Section</b></td>
+<td align="center"><b>Login Successful</b></td>
+<td align="center"><b>Booking Confirmation</b></td>
+</tr>
+
+<tr>
+<td><img src="screenshots/after/mobile/mobile-home2.png" width="180"/></td>
+<td><img src="screenshots/after/mobile/mobile-loginsuccess.png" width="180"/></td>
+<td><img src="screenshots/after/mobile/mobile-bookingconfirm.png" width="180"/></td>
 </tr>
 </table>
 
