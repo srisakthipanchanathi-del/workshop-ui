@@ -202,8 +202,8 @@ Makes the UI feel clean, modern, and professional.
 </tr>
 
 <tr>
-<td><img src="screenshots/before/before.png" width="400"/></td>
 <td><img src="screenshots/before/before2.png" width="400"/></td>
+<td><img src="screenshots/before/before.png" width="400"/></td>
 </tr>
 </table>
 
